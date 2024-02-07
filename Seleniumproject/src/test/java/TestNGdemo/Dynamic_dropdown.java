@@ -22,9 +22,10 @@ public class Dynamic_dropdown {
 		
 		List<WebElement> values=driver.findElements(By.xpath("//div[@class='autocomplete']/div"));
 		
-		for(WebElement i:values)
+		for(WebElement i:values) //hello
 		{
 			System.out.println("nie"+i.getAttribute("title"));
+			System.out.println("nie"+i.getAttribute("hello"));
 		}
 		
 		

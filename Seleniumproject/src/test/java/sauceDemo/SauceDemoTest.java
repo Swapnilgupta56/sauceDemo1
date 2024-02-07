@@ -83,7 +83,6 @@ public class SauceDemoTest {
 			 
 		}
 
-		//@And("I should be able to select random items")
 		@Test(priority=4)
 		public void select_random_items()  throws Exception{
 			List<WebElement> elementList = driver.findElements(By.xpath("//div[@class='inventory_list']/div"));		
@@ -108,7 +107,7 @@ public class SauceDemoTest {
 		        			}
 		        			else
 		        			{
-		        			System.out.println("Add to Cart Button Not diaplayed");
+		        			System.out.println("Add to Cart Button Not displayed");
 		        			}
 		                    break;
 		                }
@@ -118,7 +117,6 @@ public class SauceDemoTest {
 					 }
 				 }
 			}
-			
 			
 			driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
 			List<WebElement> elementList1 = driver.findElements(By.xpath("//div[@class='cart_item']"));	
